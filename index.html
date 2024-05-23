@@ -1,37 +1,49 @@
-<!DOCTYPE html>
-<html>
- <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+title: Breathe digital to life.
+description: Breathe digital to life.
+subtitle: Makai Digital is the online presence of <span lang="mi">Aotearoa</span> born digital designer, Greg Mackay.<br>Each day is a new problem to solve, a new idea waiting to be brought to life - so what shall we create together?
+featured_image: /images/social.jpg
+---
+<div class="wrap" style="text-align: center;">
+	<img alt="Makai Digital" style="width:70px;display:inline-block" src="images/logo.png" class="header__logo__img"></div>
+<section class="intro" style="margin-bottom: 40px;">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<style>
-    body{
-        font-family: 'Raleway', sans-serif;
-    }
-    .logo{
-        width:100px;
-    }
-    .wrapper{
-        display: flex;
-        padding:50px;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        /* border:1px solid black; */
-    }
-</style>
-</head>
-<body>
-    <div class="wrapper">
-        <div style="flex:auto">
-    <img class="logo" src="img/logo.png">
-    
-<h1>Breathe digital to life.</h1>
-<p>Makai Digital is the online presence of Aotearoa 🥝 born Digital Designer, Greg Mackay.</p>
-   <p> Each day has a new problem to solve, a new idea waiting to be brought to life - so what shall we create together?</p>
-</div>
-</div>
-</body>
-</html>
+	<div class="wrap" style="text-align: center;">
+
+		<h1>{{ page.title }}</h1>
+		<p style="font-size: 15px;">{{ page.subtitle }}</p>
+
+	</div>
+
+</section>
+<section class="listing">
+
+	<div class="content-wrap listing-wrap">
+		
+		{% for project in site.projects %}
+
+		<div class="listing-item">
+
+			<a class="listing-item__link" href="{{ project.url | relative_url }}">
+
+				<div class="listing-item__image">
+					<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
+				</div>
+
+				<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">
+					<div class="listing-item__info">
+						<h2 class="listing-item__title">{{ project.title }}</h2>
+						<p class="listing-item__subtitle">{{ project.subtitle }}</p>
+					</div>
+				</div>
+
+			</a>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+</section>
