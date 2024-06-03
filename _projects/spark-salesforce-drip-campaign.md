@@ -14,6 +14,6 @@ featured_image: '/images/projects/spark.png'
 	<img src="/images/projects/spark5.png">
 </div>
 
-One of New Zealand’s largest listed companies, Spark New Zealand, embarked on a <abbr title="Business to business">B2B<abbr> marketing automation campaign on the World’s number 1 CRM, Salesforce. I learned the Pardot platform from scratch and lead the production of an email drip campaign featuring three articles and a white paper download. 
+One of New Zealand’s largest listed companies, Spark New Zealand, embarked on a <abbr title="Business to business">B2B</abbr> marketing automation campaign on the World’s number 1 CRM, Salesforce. I learned the Pardot platform from scratch and lead the production of an email drip campaign featuring three articles and a white paper download. 
 
 I designed six email templates and four landing pages to engage existing customers at different points along the user journey.

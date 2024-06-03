@@ -6,7 +6,7 @@ description: Board is a stylish full-width masonry grid theme. Made for designer
 featured_image: '/images/projects/lbc.png'
 ---
 <img src="/images/projects/lbc1.png">
-<p><video style="width:100%;max-width:728px" controls="controls" name="728x90">
+<p><video style="width:100%;max-width:728px;min-height:90px" controls="controls" name="728x90">
   <source src="/images/projects/lbc-728x90.mov">
 </video></p>
 <p><video style="width:100%;max-width:300px" controls="controls" width="300" height="250" name="300x250">
